@@ -72,7 +72,50 @@ v.erase(v.begin()+1);
 v.erase(v.begin()+2,v.begin()+4);
 }
 
-     
+//-----------------------------------------------Inserting element in vector--------------------------------------------------------
+
+vector<int>v(2,100) //{100,100}
+v.insert(v.begin(),300); // {300,100,100}
+v.insert(v.begin()+1,2,10); //{300,10,10,100,100,}
+
+
+vector<int>copy(2,50); //{50,50}
+
+v.insert(v.begin(),copy begin(),copy.end());//{50,50,300,10,10,100,100}
+
+///////////////size of vector//////////////
+//{10,20}
+cout<<v.size(); //2
+
+v.pop_back(); // {10}
+
+// v1 = {1,2}
+//v2 = {3,4}
+
+v1.swap(v2);
+
+v1.clear(); ///clear the vector 
+cout<<v.empty(); // check if the vector is empty true = if empty ,fale = non empty
+
+
+
+
+
+
+
+
+
+_
+
+
+
+
+
+
+
+
+
+
      
      
      

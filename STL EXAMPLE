@@ -95,17 +95,128 @@ v.pop_back(); // {10}
 v1.swap(v2);
 
 v1.clear(); ///clear the vector 
-cout<<v.empty(); // check if the vector is empty true = if empty ,fale = non empty
+cout<<v.empty(); // check if the vector is empty, true = if empty ,fale = non empty
+
+---------------------------------------------list-----------------------------------------------------------------------
+---------------------------------------------    ------------------------------------------------------------------------
+//it same as vector,only difference is that it provides front end operation.
+
+//function using list
+
+void explainlist(){
+//list syntax
+ls<int>ls;
+ls.push_back(2);//{2}
+ls.emplace_back(3);//{2,3}
+ls.push-front(5);//{5,2,3}
+ls.emplace_front();//{2,3}
+
+---------------------------------------------STACK------------------------------------------------------------------
+---------------------------------------------    ------------------------------------------------------------------------
+// STACK WORKS IN LAST IN FIRST OUT
+
+//CREATING SYNTAX
+Stack<int>st;
+st.push(1);
+st.push(2);
+st.push(3);
+st.emplace(4);
+
+cout<<st.top();//4
+cout<<st.pop();//{3,2,1}
+cout<<st.top();//3
+cout<<st.size();//3
+cout<<st.empty(); // false
+stack<int>st1,st2;
+st1.swap(st2);
+
+--------------------------------------------------------------------------------------------------------------------
+---------------------------------------------QUEUE----------------------------------------------------------------------
+//IT WORKS IN FIFO FASHION 
+queue<int>q;
+
+q.push(1);//{1}
+q.push(2);//{1,2}
+q.emplace(4};//{1,2,4}
+q.back() +=5;//{1,2,9}
+cout<<q.back();//prints 9
+cout<<q.front();//prints1
+q.pop();//{2,9};
+cout<<q.front();//2
+
+--------------------------------------------------------------------------------------------------------------------
+---------------------------------------------priority queue----------------------------------------------------------------------
+//data are stored in priority order
+
+void pq(){
+    pq.push(1);//{1}
+    pq.push(2);//{1,2}
+    pq.push(8);//{1,2,8}
+    pq.push(5);//{1,2,5,8}
+    
+    cout<<pq.top();// 1
+    
+    //Time complexity of  push == logn   & pop ==  logn & top = 0(1)
+    //* The data inside is stored in tree format
+    
+    --------------------------------------------------------------------------------------------------------------------
+--------------------------------------------SET---------------------------------------------------------------------
+   //Set has two important characteristic and they are 
+   // *** all the elements are sorted in order
+   // *** all the element are unique
+   
+   void set(){
+set<int>st;
+st.insert(1);//{1}
+st.insert(2);//{1,2}
+st.insert(2);//{1,2} //no duplicate elements
+st.insert(4);//{1,2,4} 
+st.insert(3);//{1,2,3,4}// in order
+
+// {1,2,3,4,5}
+auto it = st.find(3); // o/p address of 3 
+auto it = st.find(6); // o/p st.end()
+
+st.erase(5); // {1,2,3,4}
+
+int cnt = st.count(1); // if 1 found in container then it return true or else 0.
+
+auto it = st.find(3);
+st.eraser(it);////deletes 3
+
+// {1,2,3,4,5}
+
+auto it1 = st.find(2);
+
+auto it2 = st.find(3);
+
+st.erase(it1,it2);
+
+// lower bound returns first element in range
+
+auto it = st.lower_bound(2);
+
+//upper_bound function returns an iterator pointing to the last element in the range 
+
+auto it = st.upper_bound(3):
+ --------------------------------------------------------------------------------------------------------------------
+-------------------------------------------- MULTISET---------------------------------------------------------------------
+
+
+
+
+
+   
+    
 
 
 
 
 
 
+ --------------------------------------------------------------------------------------------------------------------
+--------------------------------------------SET---------------------------------------------------------------------
 
-
-
-_
 
 
 

@@ -1,11 +1,12 @@
 #include<iostream>
 using namespace std;
+//creating function
 void print(){
     cout<<1<<endl;
-    print();
+    print(); //calling function itself
 }
 
 int main(){
-    print();
+    print(); // calling function 
     return 0;
 }

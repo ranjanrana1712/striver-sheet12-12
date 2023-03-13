@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+//to count the digits
+
+int main(){
+    int n;
+    cin>>n;
+    int count=0;
+    int temp;
+    
+    while(n>0){
+        //the number of times it didived is equal to number of digits
+        n = n/10;
+        count = count + 1;
+        
+    }
+    cout<< count;
+    
+}

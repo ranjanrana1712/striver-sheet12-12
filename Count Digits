@@ -17,3 +17,21 @@ int main(){
     cout<< count;
     
 }
+
+************approach 2 using log function*****************
+
+#include<bits/stdc++.h>
+using namespace std;
+//to count the digits
+
+int main(){
+    int n;
+    cin>>n;
+    int count=0;
+    int temp;
+    //why int : to truncate
+    temp = (int) (log10(n)+1);
+    cout<< temp;
+}
+
+//time complexity is o (log(n))

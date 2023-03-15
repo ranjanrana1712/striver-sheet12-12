@@ -1,0 +1,66 @@
+**************printing sum of n numbers using parameterized method************
+
+#include<bits/stdc++.h>
+using namespace std;
+
+//printing sum of n numbers using parameterized method
+int print(int i,int sum){
+    
+    if(i<1); //4<1
+    {
+        cout<<sum;
+        return 0;
+    }
+    print(i-1,sum+i);
+    
+    
+}
+int main(){
+    
+    int n;
+    cin>>n;
+    print(n,0);
+    return 0;
+    
+}
+
+
+*************************printing sum of n numbers using function*************************
+
+#include<bits/stdc++.h>
+using namespace std;
+int sum(int n){
+    if(n==0) return 0;
+    return n+sum(n-1);
+    
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<sum(n);
+    return 0;
+}
+
+
+*************************factorial of number *************************
+#include<bits/stdc++.h>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+    
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<fact(n);
+    return 0;
+}
+
+time complexity is o(n)
+space complexity is o(n)
+
+vip ----  if the base condition if(n==0) return 0;  this will return output 0;
+

@@ -1,0 +1,64 @@
+//*****using array hashing lower case character*******************
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    //decalaration for string
+    string s ;
+    //input for string
+    cin>>s;
+    //prcompute
+    
+    int hash[26]={0};
+    
+    for(int i =0;i<s.size();i++){
+        hash[s[i]-'a']++;
+        
+    }
+    
+    int q;
+    cin>>q;
+    while(q--){
+        char c;
+        cin>>c;
+        
+        //fetch 
+        cout<<hash[c-'a']<<endl;
+        
+        
+        
+    }
+    return 0;
+}
+
+
+//*****using array hashing all character*******************
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    //decalaration for string
+    string s ;
+    //input for string
+    cin>>s;
+    //prcompute
+    
+    int hash[256]={0};
+    
+    for(int i =0;i<s.size();i++){
+        hash[s[i]]++;
+        
+    }
+    
+    int q;
+    cin>>q;
+    while(q--){
+        char c;
+        cin>>c;
+        
+        //fetch 
+        cout<<hash[c]<<endl;
+        
+        
+        
+    }
+    return 0;
+}
